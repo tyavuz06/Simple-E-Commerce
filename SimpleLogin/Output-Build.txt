@@ -1,0 +1,7 @@
+﻿1>------ Build started: Project: SimpleLogin, Configuration: Debug Any CPU ------
+1>C:\Users\Section2\source\repos\SimpleLogin\SimpleLogin\Common\MailOperation.cs(67,30,67,32): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Users\Section2\source\repos\SimpleLogin\SimpleLogin\Controllers\AccountController.cs(58,30,58,32): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Users\Section2\source\repos\SimpleLogin\SimpleLogin\Controllers\ActivationController.cs(45,30,45,32): warning CS0168: The variable 'ex' is declared but never used
+1>C:\Users\Section2\source\repos\SimpleLogin\SimpleLogin\Controllers\AccountController.cs(122,30,122,32): warning CS0168: The variable 'ex' is declared but never used
+1>  SimpleLogin -> C:\Users\Section2\source\repos\SimpleLogin\SimpleLogin\bin\SimpleLogin.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

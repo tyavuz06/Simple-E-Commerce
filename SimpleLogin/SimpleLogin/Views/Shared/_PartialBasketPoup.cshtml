@@ -1,0 +1,49 @@
+﻿<div class="modal fade wmodal" id="basketModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sepetim</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="mymodalbody">
+                <div class="row">
+
+                    <div class="card" style="width: 100%;padding:0 10px;" id="basketpoup" data-productid="1">
+                        <img src="/Images/1.jpg" style="height:200px;width:100%;" class="card-img-top" alt="Ürünümle alakalı resmi anlatan bir acıklama">
+                        <div class="card-body">
+                            <h5 class="card-title">Ürün Adı</h5>
+                            <p class="card-text">Ürün Acıklaması</p>
+
+                            <label>
+                                Renk
+                                <select class="form-control" id="select_color">
+
+                                    <option value="1">Sarı</option>
+                                    <option value="2">Kırmızı</option>
+                                </select>
+
+                            </label>
+                            <label>
+                                Adet:
+                                <input type="number" value="1" id="txt_productcount" />
+
+                            </label>
+
+                          
+                            <a href="#" class="btn btn-primary" onclick="addproducttobasket()" id="addproducttobasketbtn">Sepete Ekle</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+
+            </div>
+        </div>
+    </div>
+</div>

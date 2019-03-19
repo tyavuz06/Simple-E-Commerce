@@ -1,0 +1,39 @@
+﻿@model SimpleLogin.Data.User
+
+
+@if (Model == null)
+{
+
+
+
+
+
+    <li>@Html.ActionLink("Kayıt ol", "Register", "Account")</li>
+    <li>@Html.ActionLink("Girş Yap", "Login", "Account")</li>
+
+}
+else
+{
+    <li>
+
+        <div class="dropdown" style="margin-top:10px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="far fa-user"></i>
+
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+
+                @Html.ActionLink("Sepet", "Basket", "User", new { @class = "dropdown-item" })
+                @Html.ActionLink("Siparişlerim", "Orders", "User", new { @class = "dropdown-item" })
+                @Html.ActionLink("Siparişlerim2", "Index", "Admin", new { @class = "dropdown-item" })
+
+
+                @Html.ActionLink("Çıkış Yap", "Logout", "Account", new { @class = "dropdown-item" })
+            </div>
+        </div>
+
+
+    </li>
+   
+}

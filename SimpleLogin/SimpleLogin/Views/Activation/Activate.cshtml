@@ -1,0 +1,29 @@
+﻿@model SimpleLogin.Responses.BaseResponse
+@{
+    ViewBag.Title = "Activate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@if (Model.ErrorCode != 0)
+{
+
+    <span style="color:red">@Model.ErrorMesseage</span>
+}
+else
+{
+    <script>
+        $(function () {
+
+            settimeout(function () {
+
+                location.href = "/Home/Index";
+
+            }, 1000);
+
+        });
+
+
+    </script>
+    <span style="color:green">@Model.ErrorMesseage</span>
+}

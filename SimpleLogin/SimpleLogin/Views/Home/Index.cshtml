@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section scripts
+{
+
+
+    <script src="~/Scripts/Page.js"></script>
+
+}
+
+<div class="row" style="margin-top:100px">
+    <div class="col-md-4">
+        <div class="card">
+            <img src='@Url.Content("/Images/1.jpg")' style="height:200px" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary addtobasket" data-productid="1">
+                    Sepete Ekle
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="@Url.Content("/Images/2.jpg")" style="height:200px" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Sepete Ekle</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="@Url.Content("/Images/3.jpg")" style="height:200px" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Sepete Ekle</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="extraoperationArea"></div>

@@ -1,0 +1,17 @@
+﻿@model object
+
+@if (SimpleLogin.Service.LoginControl.ControlLogin() != null)
+{
+
+    <li>
+        <div class="dropdown" style="margin-top:10px;margin-right: 8px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-basketball-ball"></i>
+                <span id="basketcountspan">@Model.ToString()</span>  
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            </div>
+        </div>
+
+    </li>
+}
